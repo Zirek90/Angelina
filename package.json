@@ -1,4 +1,9 @@
 {
+  "name": "Angelina",
+  "author": "Mateusz Grzymowicz",
+  "homepage": "https://zirek90.github.io/Angelina/",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
     "gulp": "^3.9.1",
     "gulp-sass": "^4.0.2",

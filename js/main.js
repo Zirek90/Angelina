@@ -46,6 +46,14 @@ $(function () {
 
     $('.gallery').on('click', moveToGallery);
 
+    // move to main content
+
+    moveToContent = () => {
+        $('.slider-content').css('display', 'none');
+        $('.wrapper').css('display', 'block');
+    }
+
+    $('#back').on('click', moveToContent);
 
     //slider
 
