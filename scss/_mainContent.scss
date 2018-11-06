@@ -1,10 +1,8 @@
 .wrapper {
-    // width: 1280px;
     height: 100vh;
     margin: auto;
-    background: url('../img/background2.jpg') center center/cover no-repeat;
+    background: url('../img/background2.jpg') center/cover no-repeat;
     position: relative;
-    // display: none;
 
     .left-container {
         display: none;
@@ -25,12 +23,14 @@
 
         h1 {
             text-align: center;
+            border-bottom: 1px solid grey;
+            margin-bottom: 0;
         }
 
         p {
             font-size: 1.3rem;
             text-align: justify;
-            padding: 20px;
+            padding: 10px;
             word-spacing: 15px;
         }
         li {
@@ -72,7 +72,9 @@
         background-color: rgba(255, 255, 255, 0.6);
 
         h1 {
-            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid grey;
+            padding: 10px;
         }
 
         .socialMedia {

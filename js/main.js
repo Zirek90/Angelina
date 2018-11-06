@@ -1,8 +1,5 @@
 $(function () {
-    
-    const leftArrow = $(".left-arrow");
-    const rightArrow = $(".right-arrow");
-    
+
     // Left bar functions
     showLeftBar = () => {
         $(".left-container").toggle('display')
@@ -30,12 +27,12 @@ $(function () {
         $(".right-arrow-container").css("right", "26%");
     }
 
-    leftArrow.on("click", showLeftBar);
-    leftArrow.on("mouseover", hideLeftArrowText);
-    leftArrow.on("mouseout", showLeftArrowText);
-    rightArrow.on("click", showRightBar);
-    rightArrow.on("mouseover", hideRightArrowText);
-    rightArrow.on("mouseout", showRightArrowText);
+    $(".left-arrow").on("click", showLeftBar);
+    $(".left-arrow").on("mouseover", hideLeftArrowText);
+    $(".left-arrow").on("mouseout", showLeftArrowText);
+    $(".right-arrow").on("click", showRightBar);
+    $(".right-arrow").on("mouseover", hideRightArrowText);
+    $(".right-arrow").on("mouseout", showRightArrowText);
 
     // move to gallery
 
@@ -65,6 +62,11 @@ $(function () {
             currentImg.removeClass('active').css('z-index', -10);
             nextImg.addClass('active').css('z-index', 10);
         }
+        if (nextImg.length === 0) {
+            currentImg.removeClass('active').css('z-index', -10);
+            $('.first').addClass('active').css('z-index', 10);
+        }
+        
     }
 
     prevImage = () => {
