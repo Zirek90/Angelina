@@ -123,10 +123,19 @@
         bottom: 20px;
         right: 40%;
         cursor: pointer;
+        
 
         &:hover {
-            font-size: 2.3rem;
+            font-size: 2.4rem;
             transition: ease-in 0.3s;
+            color: black;
+            background: -webkit-linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.582));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: white;
+            -webkit-text-stroke-width: 1px;
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
         }
     }
 }
