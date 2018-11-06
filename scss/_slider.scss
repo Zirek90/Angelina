@@ -1,0 +1,36 @@
+.slider-container {
+    width: 1280px;
+    margin: 0 auto;
+    overflow: auto;
+    display: none;
+    .slider {
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        float: left;
+        position: relative;
+        img {
+            display: none;
+            width: 100%;
+            height: 100%;
+        }
+        img.active {
+            display: inline-block;
+        }
+    }
+    #prevPicture,#nextPicture {
+        float: left;
+        margin-top: 25%;
+        cursor: pointer;
+    }
+    #prevPicture {
+        position: absolute;
+        left: 60px;
+        z-index: 100;
+    }
+    #nextPicture {
+        position: absolute;
+        right: 60px;
+        z-index: 100;
+    }
+}

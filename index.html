@@ -9,17 +9,21 @@
 </head>
 
 <body>
+    <!-- content part -->
     <div class="wrapper">
         <div class="left-container">
             <img src="./img/profile.jpg" alt="profile pic" />
             <hr>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum."</p>
+            <p>Jestem niezbyt młodym, w sumie juz w podeszłym wieku kierowca, ale bardzo kocham moje auto
+                moja angeline, tak wiec jako zem stary, ale za to doswiadczony to z checia przewioze kazdego
+                kto zaplaci mi w dukatach, zarowno na sluby, wesela, jak i libacje alkocholowo-narkotykowe
+            </p>
         </div>
-        <p class="left-arrow"></p>
+        <div class="left-arrow-container">
+            <h1 class="left-tooltip">O mnie</h1>
+            <p class="left-arrow"></p>
+        </div>
+
         <div class="right-container">
             <h1>Jeśli chcesz umówić się na ostrą jazde bez trzymanki, skontaktuj się ze mną:</h1>
             <div class="socialMedia">
@@ -35,8 +39,26 @@
                 <a href="https://www.facebook.com/artur.bujak.186">Czarna Wołga ,,Angelina'' </a>
             </div>
         </div>
-        <p class="right-arrow"></p>
+        <div class="right-arrow-container">
+            <h1 class="right-tooltip">O mnie</h1>
+            <p class="right-arrow"></p>
+        </div>
+        <p class="gallery">Odwiedz moją galerie</p>
     </div>
+    <!-- Slider part -->
+    <div class="slider-container">
+        <button id="prevPicture">Prev</button>
+
+        <div class="slider">
+            <img src="./img/background2.jpg" class="active">
+            <img src="./img/background1.jpg">
+            <img src="./img/background1.jpg">
+            <img src="./img/background2.jpg">
+            <img src="./img/background1.jpg">
+        </div>
+        <button id="nextPicture">Next</button>
+    </div>
+
 </body>
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
