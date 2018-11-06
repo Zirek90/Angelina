@@ -49,7 +49,7 @@ $(function () {
     // move to main content
 
     moveToContent = () => {
-        $('.slider-content').css('display', 'none');
+        $('.slider-container').css('display', 'none');
         $('.wrapper').css('display', 'block');
     }
 
