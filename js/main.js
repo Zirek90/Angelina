@@ -32,13 +32,15 @@ $(function () {
     showTopBar = () => {
         $(".top-container").toggle('display')
     };
+
     hideTopArrowText = () => {
         $(".top-tooltip").css('display', 'none');
-        $(".top-arrow-container").css("top", "10%");
+        $(".top-arrow-container").css("top", "40%"); 
     }
+
     showTopArrowText = () => {
         $(".top-tooltip").css('display', 'block');
-        $(".top-arrow-container").css('top', '45%');
+        $(".top-arrow-container").css('top', '42%');
     }
 
 
@@ -49,8 +51,8 @@ $(function () {
     $(".right-arrow").on("mouseover", hideRightArrowText);
     $(".right-arrow").on("mouseout", showRightArrowText);
     $(".top-arrow").on("click", showTopBar);
-    $(".top-arrow").on("click", hideTopArrowText);
-    $(".top-arrow").on("click", showTopArrowText);
+    $(".top-arrow").on("mouseover", hideTopArrowText);
+    $(".top-arrow").on("mouseout", showTopArrowText);
 
 
  
