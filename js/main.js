@@ -27,13 +27,33 @@ $(function () {
         $(".right-arrow-container").css("right", "26%");
     }
 
+
+    // top bar functions
+    showTopBar = () => {
+        $(".top-container").toggle('display')
+    };
+    hideTopArrowText = () => {
+        $(".top-tooltip").css('display', 'none');
+        $(".top-arrow-container").css("top", "10%");
+    }
+    showTopArrowText = () => {
+        $(".top-tooltip").css('display', 'block');
+        $(".top-arrow-container").css('top', '45%');
+    }
+
+
     $(".left-arrow").on("click", showLeftBar);
     $(".left-arrow").on("mouseover", hideLeftArrowText);
     $(".left-arrow").on("mouseout", showLeftArrowText);
     $(".right-arrow").on("click", showRightBar);
     $(".right-arrow").on("mouseover", hideRightArrowText);
     $(".right-arrow").on("mouseout", showRightArrowText);
+    $(".top-arrow").on("click", showTopBar);
+    $(".top-arrow").on("click", hideTopArrowText);
+    $(".top-arrow").on("click", showTopArrowText);
 
+
+ 
     // move to gallery
 
     moveToGallery = () => {
