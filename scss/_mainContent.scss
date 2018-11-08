@@ -16,8 +16,6 @@
             display: block;
             margin: 0 auto;
             padding: 10px;
-            // width: 80px;
-            // height: 130px;
             border-radius: 20%;
         }
 
@@ -26,11 +24,9 @@
             border-bottom: 1px solid grey;
             margin-bottom: 0;
             margin-top: 0;
-            // font-size: 1.7rem;
         }
 
         p {
-            // font-size: 1.2rem;
             text-align: justify;
             padding: 10px;
             word-spacing: 15px;
@@ -40,7 +36,6 @@
         ul {
             margin: 0;
             li {
-                // font-size: 1.1rem;
                 font-style: oblique;
             }
         }
@@ -92,9 +87,7 @@
         }
         
         li {
-            // font-size: 1.3rem;
             text-decoration: underline;
-            // padding: 10px;
         }
 
         h2 {
@@ -104,17 +97,13 @@
         }
 
         .socialMedia {
-            // padding: 10px;
-
             a {
-                // font-size: 1.4rem;
                 text-decoration: none;
                 padding: 5px;
                 color: rgb(43, 42, 42);
             }
 
             :hover {
-                // font-size: 1.7rem;
                 color: black;
             }
         }
@@ -149,7 +138,6 @@
     .gallery {
         color: rgb(248, 83, 7);
         position: absolute;
-        // bottom: 20px;
         right: 38%;
         cursor: pointer;
         font-family: 'Pattaya', sans-serif;
@@ -170,10 +158,8 @@
     }
     .top-container {
         background-color: rgba(255, 255, 255, 0.6);
-        // width: 35%;
         position: absolute;
         top: 0;
-        // left: 32%;
         box-sizing: border-box;
         display: none;
         
@@ -182,18 +168,15 @@
             margin-bottom: 0;
         }
         ul {
-            // display: inline;
             margin: 0;
         }
         li {
             list-style: upper-roman;
-            // margin-left: 25px;
         }
     }
     .top-arrow-container {
         position: absolute;
         top: 42%;
-        // right: 46%;
 
         .top-arrow {
             border: solid white;
@@ -210,7 +193,6 @@
             display: block;
             position: absolute;
             bottom: -50px;
-            // right: -15px;
             font-family: 'Pattaya', sans-serif;
             letter-spacing: 3px;
             color: rgb(248, 83, 7);
