@@ -1,5 +1,5 @@
 .wrapper {
-    height: 100%;
+    height: 97%;
     margin: auto;
     background: url('../img/contentBackground.jpeg') center/cover no-repeat;
     position: relative;
@@ -26,10 +26,11 @@
             border-bottom: 1px solid grey;
             margin-bottom: 0;
             margin-top: 0;
+            font-size: 1.7rem;
         }
 
         p {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             text-align: justify;
             padding: 10px;
             word-spacing: 15px;
@@ -39,13 +40,14 @@
         ul {
             margin: 0;
             li {
-                font-size: 1.2rem;
+                font-size: 1.1rem;
                 font-style: oblique;
             }
         }
         h2 {
             text-align: center;
             border-bottom: 1px solid grey;
+            margin-bottom: 0;
         }
         
     }
@@ -217,4 +219,20 @@
             color: rgb(248, 83, 7);
         }
     }
+}
+footer {
+    background-color: rgba(236, 239, 240, 0.815);
+    text-align: center;
+    .copyrights {
+        font-weight: bold;
+        color: black;
+    }
+    p {
+        display: inline;
+        margin-left: 50px;
+        color: rgb(160, 159, 159);
+        a {
+            text-decoration: none;
+        }
+    } 
 }
