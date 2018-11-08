@@ -44,21 +44,26 @@
             a {
                 font-size: 1.4rem;
             }
+
             :hover {
                 font-size: 1.7rem;
             }
         }
     }
+
     .top-container {
         width: 35%;
         left: 32%;
+
         h2 {
             font-size: 1.5rem;
         }
+
         li {
             font-size: 1rem;
         }
     }
+
     .gallery {
         bottom: 20px;
     }
@@ -110,27 +115,33 @@
             a {
                 font-size: 1rem;
             }
+
             :hover {
                 font-size: 1.2rem;
             }
         }
     }
+
     .top-container {
         width: 45%;
         left: 27.5%;
+
         h2 {
             font-size: 1rem;
             margin-bottom: 0;
         }
+
         ul {
             margin: 0;
         }
+
         li {
             font-size: 0.7rem;
         }
     }
+
     .gallery {
-        bottom: 0;
+        bottom: -10px;
     }
 }
 
@@ -138,59 +149,78 @@
     .top-arrow-container {
         right: 46%;
     }
-    .left-tooltip{
+
+    .left-tooltip {
         font-size: 2.3rem;
     }
-    .right-tooltip{
+
+    .right-tooltip {
         font-size: 2.3rem;
 
     }
-    .top-tooltip{
+
+    .top-tooltip {
         font-size: 2.3rem;
         right: -15px;
     }
+
     .gallery {
         font-size: 2.3rem;
-
     }
 }
+
 @media (max-width: 845px) {
     .top-arrow-container {
         right: 46%;
     }
-    .left-tooltip{
+
+    .left-tooltip {
         font-size: 1.5rem;
     }
-    .right-tooltip{
+
+    .right-tooltip {
         font-size: 1.5rem;
 
     }
-    .top-tooltip{
+
+    .top-tooltip {
         font-size: 1.5rem;
         right: -15px;
     }
+
     .gallery {
         font-size: 2.3rem;
+    }
 
+    .copyrights {
+        display: block;
     }
 }
+
 @media (max-width: 555px) {
     .top-arrow-container {
         right: 44%;
     }
-    .left-tooltip{
+
+    .left-tooltip {
         font-size: 1rem;
     }
-    .right-tooltip{
+
+    .right-tooltip {
         font-size: 1rem;
 
     }
-    .top-tooltip{
+
+    .top-tooltip {
         font-size: 1rem;
         right: 0;
     }
+
     .gallery {
         font-size: 1.5rem;
     }
+
+    footer>p {
+        font-size: 0.8rem;
+    }
 }
-// width 846
