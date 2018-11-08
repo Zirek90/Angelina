@@ -7,6 +7,7 @@ $(function () {
         } else {
             $(".left-container").toggle('display')
             $(".left-container").toggleClass('left-right-smallscreen');
+            $(".left-arrow-container").toggleClass('left-arrow-smallscreen');
 
             $(".right-arrow-container").toggle('display')
             $(".top-arrow-container").toggle('display')
@@ -15,11 +16,15 @@ $(function () {
     };
     hideLeftArrowText = () => {
         $(".left-tooltip").css('display', 'none');
-        $(".left-arrow-container").css("left", "25%");
+        if (window.matchMedia('(min-width: 840px)').matches) {
+            $(".left-arrow-container").css("left", "25%");
+        }
     }
     showLeftArrowText = () => {
         $(".left-tooltip").css('display', 'block');
-        $(".left-arrow-container").css("left", "26%");
+        if (window.matchMedia('(min-width: 840px)').matches) {
+            $(".left-arrow-container").css("left", "26%");
+        }
     }
 
 
@@ -30,6 +35,8 @@ $(function () {
         } else {
             $(".right-container").toggle('display')
             $(".right-container").toggleClass('left-right-smallscreen');
+            $(".right-arrow-container").toggleClass('right-arrow-smallscreen');
+
 
             $(".left-arrow-container").toggle('display')
             $(".top-arrow-container").toggle('display')
@@ -38,11 +45,17 @@ $(function () {
     };
     hideRightArrowText = () => {
         $(".right-tooltip").css('display', 'none');
-        $(".right-arrow-container").css("right", "25%");
+
+        if (window.matchMedia('(min-width: 840px)').matches) {
+            $(".right-arrow-container").css("right", "25%");
+        }
     }
     showRightArrowText = () => {
         $(".right-tooltip").css('display', 'block');
-        $(".right-arrow-container").css("right", "26%");
+
+        if (window.matchMedia('(min-width: 840px)').matches) {
+            $(".right-arrow-container").css("right", "26%");
+        }
     }
 
 
