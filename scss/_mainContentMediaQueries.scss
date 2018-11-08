@@ -1,0 +1,131 @@
+@media (min-height: 731px) {
+    .left-container {
+        img {
+            width: 80px;
+            height: 130px;
+        }
+
+        h1 {
+            font-size: 1.7rem;
+
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+
+        li {
+            font-size: 1.1rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+    }
+
+    .right-container {
+        h1 {
+            font-size: 1.7rem;
+        }
+
+        li {
+            font-size: 1.3rem;
+            padding: 10px;
+
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        .socialMedia {
+            padding: 10px;
+
+            a {
+                font-size: 1.4rem;
+            }
+            :hover {
+                font-size: 1.7rem;
+            }
+        }
+    }
+    .top-container {
+        width: 35%;
+        left: 32%;
+        h2 {
+            font-size: 1.5rem;
+        }
+        li {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media (max-height: 730px) {
+    .left-container {
+        img {
+            width: 50px;
+            height: 90px;
+        }
+
+        h1 {
+            font-size: 1.2rem;
+        }
+
+        p {
+            font-size: 0.8em;
+        }
+
+        li {
+            font-size: 0.6rem;
+        }
+
+        h2 {
+            font-size: 1.1rem;
+        }
+    }
+
+    .right-container {
+        h1 {
+            font-size: 1.2rem;
+
+        }
+
+        li {
+            font-size: 0.8rem;
+            padding: 5px;
+        }
+
+        h2 {
+            font-size: 1.1rem;
+
+        }
+
+        .socialMedia {
+            padding: 5px;
+
+            a {
+                font-size: 1rem;
+            }
+            :hover {
+                font-size: 1.2rem;
+            }
+        }
+    }
+    .top-container {
+        width: 45%;
+        left: 27.5%;
+        h2 {
+            font-size: 1rem;
+            margin-bottom: 0;
+        }
+        ul {
+            margin: 0;
+        }
+        li {
+            font-size: 0.7rem;
+        }
+    }
+}
+
+// width 846

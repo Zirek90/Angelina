@@ -2,7 +2,16 @@ $(function () {
 
     // Left bar functions
     showLeftBar = () => {
-        $(".left-container").toggle('display')
+        if (window.matchMedia('(min-width: 840px)').matches) {
+            $(".left-container").toggle('display')
+        } else {
+            $(".left-container").toggle('display')
+            $(".left-container").toggleClass('left-right-smallscreen');
+
+            $(".right-arrow-container").toggle('display')
+            $(".top-arrow-container").toggle('display')
+            $(".gallery").toggle('display')
+        }
     };
     hideLeftArrowText = () => {
         $(".left-tooltip").css('display', 'none');
@@ -12,11 +21,20 @@ $(function () {
         $(".left-tooltip").css('display', 'block');
         $(".left-arrow-container").css("left", "26%");
     }
-    
+
 
     // Right bar functions
     showRightBar = () => {
-        $(".right-container").toggle('display')
+        if (window.matchMedia('(min-width: 840px)').matches) {
+            $(".right-container").toggle('display')
+        } else {
+            $(".right-container").toggle('display')
+            $(".right-container").toggleClass('left-right-smallscreen');
+
+            $(".left-arrow-container").toggle('display')
+            $(".top-arrow-container").toggle('display')
+            $(".gallery").toggle('display')
+        }
     };
     hideRightArrowText = () => {
         $(".right-tooltip").css('display', 'none');
@@ -30,12 +48,21 @@ $(function () {
 
     // top bar functions
     showTopBar = () => {
-        $(".top-container").toggle('display')
+        if (window.matchMedia('(min-width: 840px)').matches) {
+            $(".top-container").toggle('display')
+        } else {
+            $(".top-container").toggle('display')
+            $(".top-container").toggleClass('top-smallscreen');
+
+            $(".left-arrow-container").toggle('display')
+            $(".right-arrow-container").toggle('display')
+            $(".gallery").toggle('display')
+        }
     };
 
     hideTopArrowText = () => {
         $(".top-tooltip").css('display', 'none');
-        $(".top-arrow-container").css("top", "40%"); 
+        $(".top-arrow-container").css("top", "40%");
     }
 
     showTopArrowText = () => {
@@ -55,7 +82,7 @@ $(function () {
     $(".top-arrow").on("mouseout", showTopArrowText);
 
 
- 
+
     // move to gallery
 
     moveToGallery = () => {
@@ -88,7 +115,7 @@ $(function () {
             currentImg.removeClass('active').css('z-index', -10);
             $('.first').addClass('active').css('z-index', 10);
         }
-        
+
     }
 
     prevImage = () => {
@@ -101,8 +128,8 @@ $(function () {
         }
     }
 
-   $('#nextPicture').on('click', nextImage);
-   $('#prevPicture').on('click', prevImage);
+    $('#nextPicture').on('click', nextImage);
+    $('#prevPicture').on('click', prevImage);
 
 
 })
