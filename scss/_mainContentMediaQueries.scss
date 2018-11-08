@@ -129,6 +129,9 @@
 }
 
 @media (min-width: 846px) {
+    .top-arrow-container {
+        right: 46%;
+    }
     .left-tooltip{
         font-size: 2.3rem;
     }
@@ -138,6 +141,7 @@
     }
     .top-tooltip{
         font-size: 2.3rem;
+        right: -15px;
     }
     .gallery {
         font-size: 2.3rem;
@@ -145,6 +149,9 @@
     }
 }
 @media (max-width: 845px) {
+    .top-arrow-container {
+        right: 46%;
+    }
     .left-tooltip{
         font-size: 1.5rem;
     }
@@ -154,6 +161,7 @@
     }
     .top-tooltip{
         font-size: 1.5rem;
+        right: -15px;
     }
     .gallery {
         font-size: 2.3rem;
@@ -161,15 +169,19 @@
     }
 }
 @media (max-width: 555px) {
+    .top-arrow-container {
+        right: 44%;
+    }
     .left-tooltip{
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     .right-tooltip{
-        font-size: 1.1rem;
+        font-size: 1rem;
 
     }
     .top-tooltip{
-        font-size: 1.1rem;
+        font-size: 1rem;
+        right: 0;
     }
     .gallery {
         font-size: 1.5rem;
