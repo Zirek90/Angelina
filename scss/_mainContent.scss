@@ -66,7 +66,9 @@
 
         .left-tooltip {
             width: max-content;
-            color: white;
+            font-family: 'Pattaya', sans-serif;
+            letter-spacing: 3px;
+            color: rgb(248, 83, 7);
             display: block;
             position: absolute;
             bottom: 60px;
@@ -133,29 +135,34 @@
 
         .right-tooltip {
             width: max-content;
-            color: white;
             display: block;
             position: absolute;
             bottom: 60px;
             right: -10px;
+            font-family: 'Pattaya', sans-serif;
+            letter-spacing: 5px;
+            color: rgb(248, 83, 7);
         }
     }
     .gallery {
-        color: white;
+        color: rgb(248, 83, 7);
         font-size: 2rem;
         position: absolute;
         bottom: 20px;
         right: 40%;
         cursor: pointer;
+        font-family: 'Pattaya', sans-serif;
+        font-size: 2.3rem;
+
         
 
         &:hover {
-            font-size: 2.4rem;
+            font-size: 2.5rem;
             transition: ease-in 0.3s;
             color: black;
             background: -webkit-linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.582));
             -webkit-background-clip: text;
-            -webkit-text-fill-color: white;
+            -webkit-text-fill-color: rgb(248, 83, 7);
             -webkit-text-stroke-width: 1px;
             -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
             -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
@@ -201,11 +208,13 @@
 
         .top-tooltip {
             width: max-content;
-            color: white;
             display: block;
             position: absolute;
             bottom: -50px;
-            right: -5px;
+            right: -15px;
+            font-family: 'Pattaya', sans-serif;
+            letter-spacing: 5px;
+            color: rgb(248, 83, 7);
         }
     }
 }
