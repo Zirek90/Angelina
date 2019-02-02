@@ -100,7 +100,7 @@ $(function () {
 
     moveToGallery = () => {
         $('.wrapper').css('display', 'none');
-        $('.slider-container').css('display', 'block');
+        $('.slider-container').css('display', 'flex');
     }
 
     $('.gallery').on('click', moveToGallery);
