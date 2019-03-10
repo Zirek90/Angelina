@@ -1,5 +1,11 @@
 $(function () {
 
+    // Get Data for footer
+    (() => {
+        let data = new Date().getFullYear();
+        $('.copyrights-year').text(data);        
+    })();
+
     // Left bar functions
     showLeftBar = () => {
         if (window.matchMedia('(min-width: 840px)').matches) {

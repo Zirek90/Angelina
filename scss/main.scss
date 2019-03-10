@@ -7,7 +7,7 @@ body {
 body::after {
     content: '';
     display: block;
-    height: 50px;
+    height: 25px;
   }
 
 @import "./mainContent.scss";
