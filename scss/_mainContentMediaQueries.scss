@@ -52,8 +52,6 @@
     }
 
     .top-container {
-        width: 35%;
-        left: 32%;
 
         h2 {
             font-size: 1.5rem;
@@ -123,8 +121,6 @@
     }
 
     .top-container {
-        width: 45%;
-        left: 27.5%;
 
         h2 {
             font-size: 1rem;
@@ -147,7 +143,7 @@
 
 @media (min-width: 846px) {
     .top-arrow-container {
-        right: 46%;
+        right: 48%;
     }
 
     .left-tooltip {
@@ -170,8 +166,11 @@
 }
 
 @media (max-width: 845px) {
+    // .top-container {
+    //     width: 100%;
+    // }
     .top-arrow-container {
-        right: 46%;
+        right: 47%;
     }
 
     .left-tooltip {
@@ -185,7 +184,7 @@
 
     .top-tooltip {
         font-size: 1.5rem;
-        right: -15px;
+        right: -5px;
     }
 
     .gallery {
@@ -198,6 +197,9 @@
 }
 
 @media (max-width: 555px) {
+    // .top-container {
+    //     width: 100%;
+    // }
     .top-arrow-container {
         right: 44%;
     }

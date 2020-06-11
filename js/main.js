@@ -66,18 +66,31 @@ $(function () {
 
 
     // top bar functions
-    showTopBar = () => {
+    showCloseTopBar = () => {
         if (window.matchMedia('(min-width: 840px)').matches) {
             $(".top-container").toggle('display')
+            $(".top-arrow-container").toggle('display')
+            $(".gallery").toggle('display')
         } else {
-            $(".top-container").toggle('display')
-            $(".top-container").toggleClass('top-smallscreen');
+            if ($(".top-container").hasClass("top-smallscreen")) {
+                $(".top-container").toggle('display')
+                $(".top-arrow-container").toggle('display')
+                $(".top-container").toggleClass('top-smallscreen');
+            }
+            else {
+                $(".top-container").toggleClass('top-smallscreen');
+                $(".top-container").toggle('display')
+                $(".top-arrow-container").toggle('display')
+            }
+            
 
             $(".left-arrow-container").toggle('display')
             $(".right-arrow-container").toggle('display')
             $(".gallery").toggle('display')
         }
+        
     };
+
 
     hideTopArrowText = () => {
         $(".top-tooltip").css('display', 'none');
@@ -86,7 +99,7 @@ $(function () {
 
     showTopArrowText = () => {
         $(".top-tooltip").css('display', 'block');
-        $(".top-arrow-container").css('top', '42%');
+        $(".top-arrow-container").css('top', '41%');
     }
 
 
@@ -96,9 +109,10 @@ $(function () {
     $(".right-arrow").on("click", showRightBar);
     $(".right-arrow").on("mouseover", hideRightArrowText);
     $(".right-arrow").on("mouseout", showRightArrowText);
-    $(".top-arrow").on("click", showTopBar);
+    $(".top-arrow").on("click", showCloseTopBar);
     $(".top-arrow").on("mouseover", hideTopArrowText);
     $(".top-arrow").on("mouseout", showTopArrowText);
+    $(".top-container>.close>span").on("click", showCloseTopBar);
 
 
 
